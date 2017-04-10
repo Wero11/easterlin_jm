@@ -1,0 +1,117 @@
+/**
+ * @package Helix Framework
+ * @author JoomShaper http://www.joomshaper.com
+ * @copyright Copyright (c) 2010 - 2013 JoomShaper
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or later
+*/
+
+//module variation
+.module {
+	margin-top:20px;
+	&:first-child{
+		margin-top:0;
+	}
+	h2 {
+		font-size:24px;
+		font-weight: 100;
+		margin:0 0 20px 0;
+		line-height:normal;
+	}
+	
+	&.highlighted,
+	&.orange,
+	&.red,
+	&.green,
+	&.darkcyan,
+	&.darkorchid{
+		h2 {
+			padding:0 0 10px 0;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+			color: #fff;
+		}
+		padding:20px;
+		color:@white;
+		.border-radius(3px);
+	}
+	
+	&.orange {
+		background:@orange;
+		a{
+		 color:#B66B00;
+			 
+		&:hover{
+			   color:#6F4100;
+			   }
+		}
+	}
+	
+	&.red {
+		background: #ea442a;
+		a{
+		 color:#777;
+			 
+		&:hover{
+			   color:#888;
+			   }
+		}
+	}
+	&.green {
+		background: #65d800;
+		a{
+		 color:#63E063;
+			 
+		&:hover{
+			   color:#43F043;
+			   }
+		}
+	}
+	&.darkcyan  {
+		background:#1ABC9C;
+		a{
+		 color:#B4300D;
+			 
+		&:hover{
+			   color:#C93F19;
+			   }
+		}
+	}
+	&.darkorchid {
+		background: #B285A0;
+		a{
+		 color:#47C9FF;
+			 
+		&:hover{
+			   color:#0073A3;
+			   }
+		}
+	}
+}
+
+.module {
+	&.highlighted {
+		background:#3498DB;
+		a{
+			color:#fff !important;
+		}
+	}
+}
+
+//Module title 
+h2.module-title{
+	span.module-subtitle{
+		display: block;
+		font-size: 20px;
+	}
+}
+
+//Sidebar
+#sp-right{
+	h2.module-title{
+		font-size: 16px;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+	.module{
+		margin-bottom: 30px;
+	}
+}

@@ -1,0 +1,306 @@
+/**
+ * @author Tripples http://www.themewinter.com
+ * @copyright Copyright (c) 2013 - 2014 Tripples
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or later
+*/
+
+.responsive {
+
+	/* Small desktop */
+	@media (min-width: 980px) and (max-width: 1199px) { 
+
+		#sp-main-menu ul.level-0 > li{
+			margin-right: 10px;
+			>a{
+				font-size: 14px;
+			}
+		}
+
+		//Sub page
+		#sp-sub-heading{
+			.sub-header-content{
+				padding-left: 16px !important;
+			}
+			ul.breadcrumb{
+				margin-top: -18px !important;
+				right: 22px !important;
+			}
+		}
+
+		//Rocksprocket features
+		.layout-slideshow .sprocket-features-content {
+			text-align: center;
+			top: 54% !important;
+			left: 50% !important;
+			width: 70% !important;
+			margin-left: -343px;
+		}
+
+
+		//Home 3
+		.video-presentation iframe{
+			width: 358px;
+		}
+
+		//Main Tab
+		.main-tab{
+			.sprocket-tabs-panel{
+				img{
+					width: 35%;
+				}
+			}
+		}
+
+	}
+
+
+	/* Portrait tablet to landscape and desktop */
+	@media (min-width: 768px) and (max-width: 979px) {
+
+		//Features
+		#sp-features .features-wrapper 
+		.feature-content h3{
+			line-height: 26px;
+			font-size: 14px;
+		}
+
+		//Tab
+		.sprocket-tabs-nav li .sprocket-tabs-inner{
+			padding: 10px 9px;
+		}
+
+		//Sub page
+		#sp-sub-heading{
+			.sub-header-content{
+				padding-left: 16px !important;
+			}
+			ul.breadcrumb{
+				margin-top: -18px !important;
+				right: 22px !important;
+			}
+		}
+
+		//Rocksprocket features
+		.sprocket-mosaic .sprocket-mosaic-item 
+		.sprocket-padding h2.sprocket-mosaic-title{
+			font-size: 14px;
+		}
+		.layout-slideshow .sprocket-features-content {
+			text-align: center;
+			top: 55% !important;
+			width: 70% !important;
+			margin-left: -328px;
+		}
+		&.menu-about-us{
+			.layout-slideshow .sprocket-features-content {
+				top: 52% !important;
+				width: 80% !important;
+				margin-left: -291px;
+			}
+		}
+		//Pricing
+		.ts-pricing ul.plan li.plan-name{
+			font-size: 22px;
+		}
+
+		//Home 3
+		.video-presentation iframe{
+			width: 358px;
+		}
+
+		//Main Tab
+		.main-tab{
+			.sprocket-tabs-panel{
+				img{
+					width: 35%;
+				}
+			}
+		}
+		
+	}
+	/* Portrait tablet to landscape and desktop */
+
+	/* Mobile Standard */
+
+	@media (max-width:767px) {
+
+		&.bg {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		 .container {
+			padding:0 10px;
+			max-width:480px;
+			min-width:280px;
+		}
+		.sp-mobile-menu{
+			top: 100px;
+			z-index: 1000;
+		}
+
+	//Header
+	#sp-header-wrapper{
+		height: 80px;
+		padding-bottom: 0;
+		&.header-fixed{
+			position: relative !important;
+		}
+	}
+
+	&.homepage a.call-action {
+		float: left;
+	}
+
+	//Bottom
+	#sp-bottom-wrapper{
+		.module{
+			margin-bottom: 20px;
+		}
+	}
+
+	//Footer
+	#sp-footer2{
+		text-align: left !important;
+		ul.nav {
+			margin-left: 0 !important;
+			li{
+				margin-left: 0 !important;
+			}
+		}
+	}
+
+	//Sub page
+		#sp-sub-heading{
+			.sub-header-content{
+				padding-left: 16px !important;
+			}
+			ul.breadcrumb{
+				margin-top: -18px !important;
+				right: 22px !important;
+			}
+		}
+
+
+	.partner .sprocket-strips ul li {
+		width: 50%;
+		float: left;
+	}
+
+	//Pricing
+	.ts-pricing ul.plan{
+		margin-bottom: 30px;
+	}
+
+	//Home 2
+	.layout-slideshow .sprocket-features-content {
+		top: 50% !important;
+		width: 80% !important;
+		margin-left: -305px;
+		h2.sprocket-features-title {
+			font-size: 22px;
+		}
+	}
+	.sprocket-features-pagination {
+		left: 0 !important;
+	}
+
+	&.menu-about-us{
+		.layout-slideshow .sprocket-features-content {
+			display: none;
+		}
+	}
+
+	.lead{
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	//Home 3
+	#sp-features .basic-style3 .features-wrapper .feature-content h3 {
+		margin: 20px 0 4px;
+	}
+
+	#sp-main-body-wrapper .entry-content h2{
+		font-size: 24px !important;
+		line-height: 34px;
+	}
+
+	//Main Tab
+	.main-tab{
+		.sprocket-tabs-panel{
+			img{
+				width: 50%;
+			}
+		}
+		.layout-right .sprocket-tabs-nav{
+			margin-left: 30px;
+		}
+		.sprocket-tabs-nav li .sprocket-tabs-inner{
+			padding: 5px 15px;
+		}
+	}
+
+
+}
+	/* Mobile Standard end */
+
+	/* Landscape phones and down */
+	@media (max-width: 480px) {
+		
+		#sp-header-wrapper{
+			padding-bottom: 0;
+		}
+		//subpage sub-header
+		#sp-sub-heading .custom .sub-header-content {
+			padding: 30px 15px;
+			h2 {
+				font-size: 32px;
+			}
+		}
+
+		//Home 2
+		.layout-slideshow .sprocket-features-content{
+			display: none;
+		}
+
+		#sp-main-body-wrapper .entry-content h2 {
+			font-size: 18px !important;
+			line-height: 24px;
+		}
+
+
+		//Main Tab
+		.main-tab{
+			.main-tab-icon{
+				font-size: 22px;
+				width: 32px;
+				height: 32px;
+			}
+			h3{
+				font-size: 14px;
+			}
+		}
+
+		//Module title
+		h2.module-title{
+			font-size: 24px !important;
+			line-height: normal;
+		}
+
+	}
+
+	/* Landscape phones and down end */
+
+
+	/* Iphone */
+	@media (max-width: 320px){
+		&.bg {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+
+	}
+	/* Iphone end */
+
+}
+/*-- Responsive End --*/
